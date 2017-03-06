@@ -1,4 +1,5 @@
 <h2><%= @category.name%>'s articles are listed below</h2>
+<%= link_to "Create a new article", new_category_article_path(@category.id) %>
 
 <ul>
  <% @articles.each do |article| %>
@@ -6,7 +7,6 @@
  Title: <%= article.title %><br><br>
  Content: <%= article.content %><br><br>
  <%end%>
- <%= link_to "Create a new article", new_category_article_path(@category.id) %>
 
 
 </ul>
