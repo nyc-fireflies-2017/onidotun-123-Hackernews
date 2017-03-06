@@ -1,1 +1,7 @@
-asfgdsadsadsa
+
+<ul>
+ <% @articles.each do |article| %>
+ Title: <%= article.title %><br><br>
+ Content: <%= article.content %><br><br>
+ <%end%>
+</ul>
