@@ -1,5 +1,6 @@
 <h2>Welcome to Our Awesome Website</h2>
-
-<% @categories.each do |category| %>
-<%= category.name %>
+<ul>
+  <% @categories.each do |category| %>
+  <li><%= category.name %></li><br><br>
 <%end%>
+</ul>
