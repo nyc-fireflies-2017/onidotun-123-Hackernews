@@ -28,6 +28,18 @@ def show
   @article = @category.articles.find(params[:id])
 end
 
+
+def edit
+  @category = Category.find(params[:category_id])
+  @article = Article.find(params[:id])
+end
+
+def update
+  @article = Article.find(params[:id])
+  @article.update_attributes(article_params)
+  redirect_to category_articles_path
+end
+
   private
   def article_params
     params.require(:article).permit(:title, :content)
