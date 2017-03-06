@@ -5,7 +5,8 @@
  <% @articles.each do |article| %>
  <hr>
  Title: <%= article.title %><br><br>
- Content: <%= article.content %><br><br>
+
+ <%= link_to "View this article", category_article_path(@category.id, article.id) %>
  <%end%>
 
 

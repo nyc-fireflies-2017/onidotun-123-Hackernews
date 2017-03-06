@@ -20,7 +20,13 @@ class ArticlesController < ApplicationController
       else
         render "new"
       end
+
   end
+
+def show
+  @category = Category.find(params[:category_id])
+  @article = @category.articles.find(params[:id])
+end
 
   private
   def article_params
