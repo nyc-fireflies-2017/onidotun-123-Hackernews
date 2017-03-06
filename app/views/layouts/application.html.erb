@@ -12,7 +12,7 @@
     <header class "clearfix">
       <div class="left-nav">
         <ul>
-          <li> <%= link_to "Home", categories_path  %></li>
+          <li> <%= link_to "View all Categories", categories_path  %></li>
         </ul>
       </div>
 
@@ -22,6 +22,9 @@
         </ul>
       </div>
     </header>
-    <%= yield %>
+
+    <div class="content">
+      <%= yield %>
+    </div>
   </body>
 </html>
