@@ -12,8 +12,12 @@ class CategoriesController < ApplicationController
       Category.create(category_params)
       redirect_to categories_path
     end
-
+      private
     def category_params
       params.require(:category).permit(:name)
-    end 
+    end
+
+    def edit
+
+    end
 end
