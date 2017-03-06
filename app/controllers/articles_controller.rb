@@ -1,7 +1,9 @@
 class ArticlesController < ApplicationController
 
-  # def index
-  #   @categories = Category.all
-  #   @articles = @categories.articles.all
-  # end
+  def index
+    # @category = Category.find(params[:id])
+    # @articles = @categories.articles.all
+    "Hello World"
+  end
+
 end
