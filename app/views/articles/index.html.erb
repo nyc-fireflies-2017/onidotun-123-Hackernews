@@ -1,0 +1,13 @@
+<h2><%= @category.name%>'s articles are listed below</h2>
+<%= link_to "Create a new article", new_category_article_path(@category.id) %>
+
+<ul>
+ <% @articles.each do |article| %>
+ <hr>
+ Title: <%= article.title %><br><br>
+
+ <%= link_to "View this article", category_article_path(@category.id, article.id) %>
+ <%end%>
+
+
+</ul>

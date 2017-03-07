@@ -1,0 +1,19 @@
+
+<div class="container">
+
+<h2>Lets create a new Article.</h2>
+
+<%= form_for [@category, @article] do |f| %>
+  <div>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+
+    <%= f.label :content %>
+    <%= f.text_field :content %>
+  </div>
+  <br>
+  <div>
+    <%= f.submit %>
+  </div>
+  <%end %>
+</div>

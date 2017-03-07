@@ -1,0 +1,9 @@
+<h2>Welcome to Our Awesome Website</h2>
+<ul>
+  <% @categories.each do |category| %>
+  <li><%= category.name %></li>
+  <h5> <%= link_to "View This Category", category_articles_path(category)  %> </h5>
+  <h5><%= link_to "Edit This Category", edit_category_path(category)%></h5>
+  <h5><%= link_to "Delete This Category", category, method: :delete %></h5>
+<%end%>
+</ul>

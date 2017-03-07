@@ -9,6 +9,22 @@
   </head>
 
   <body>
-    <%= yield %>
+    <header class "clearfix">
+      <div class="left-nav">
+        <ul>
+          <li> <%= link_to "View all Categories", categories_path  %></li>
+        </ul>
+      </div>
+
+      <div class="right-nav">
+        <ul>
+          <li><%= link_to "Add a New Category", new_category_path %> </li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="content">
+      <%= yield %>
+    </div>
   </body>
 </html>
